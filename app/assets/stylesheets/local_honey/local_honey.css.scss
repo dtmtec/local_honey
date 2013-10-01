@@ -16,10 +16,12 @@
   }
 
   &.list {
+    list-style-type: none;
+    float: right;
 
-  }
-
-  a {
-
+    li {
+      display: inline;
+      margin-left: 5px;
+    }
   }
 }

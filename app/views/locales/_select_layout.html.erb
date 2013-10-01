@@ -1,4 +1,4 @@
-<div class="local_honey btn-group">
+<div class="local-honey select btn-group">
   <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">
     <%= current_locale %>
     <span class="caret"></span>
@@ -6,13 +6,13 @@
 
   <ul class="dropdown-menu">
     <li title="<%= t('locales.portuguese') %>">
-      <%= link_to local_honey.locale_path('pt-BR'), class: 'pt-br-locale' do %>
+      <%= link_to local_honey.locale_path('pt-BR') do %>
         <%= image_tag('local_honey/flag-pt-BR.png') %>
         <%= t('locales.portuguese') %>
       <% end %>
     </li>
     <li title="<%= t('locales.english') %>">
-      <%= link_to local_honey.locale_path('en'), class: 'en-locale' do %>
+      <%= link_to local_honey.locale_path('en') do %>
         <%= image_tag('local_honey/flag-en.png') %>
         <%= t('locales.english') %>
       <% end %>
