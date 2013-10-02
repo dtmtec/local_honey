@@ -1,4 +1,4 @@
-<ul class="local-honey list">
+<ul class="local-honey list <%= options[:extra_class] %>">
   <li title="<%= t('locales.portuguese') %>">
     <%= link_to local_honey.locale_path('pt-BR') do %>
       <%= image_tag('local_honey/flag-pt-BR.png') %>

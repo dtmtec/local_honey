@@ -6,7 +6,7 @@ module LocalHoney
 
     def render_local_honey(options = {})
       options = options.reverse_merge({ layout: :select })
-      render "locales/#{options[:layout]}_layout"
+      render "locales/#{options[:layout]}_layout", options: options
     end
   end
 end
