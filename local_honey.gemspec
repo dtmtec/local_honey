@@ -7,11 +7,11 @@ require "local_honey/version"
 Gem::Specification.new do |s|
   s.name        = "local_honey"
   s.version     = LocalHoney::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of LocalHoney."
-  s.description = "TODO: Description of LocalHoney."
+  s.authors     = ["Luis Vasconcellos", "Vicente Mundim"]
+  s.email       = ["vicente.mundim@dtmtec.com.br", "luis.vasconcellos@dtmtec.com.br"]
+  s.homepage    = "http://dtmtec.com.br"
+  s.summary     = "LocalHoney helps you to use multiple languages in your application."
+  s.description = "LocalHoney helps you to use multiple languages in your application."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
