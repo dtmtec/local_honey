@@ -1,6 +1,5 @@
 module LocalHoney
   class LocalesController < ::ApplicationController
-
     def locale
       locale = params[:locale]
 
