@@ -5,7 +5,7 @@ module LocalHoney
 
   included do
     before_filter :set_locale
-    after_filter :local_honey_after_filter
+    after_filter :local_honey_after_filter, only: :locale
   end
 
   def set_locale
