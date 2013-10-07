@@ -13,6 +13,5 @@ module LocalHoney
   end
 
   def local_honey_after_filter
-    raise 'You need to implement local_honey_synchronize'
   end
 end
