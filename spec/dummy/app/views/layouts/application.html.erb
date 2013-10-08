@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="content">
+    <h1>Local Honey application examples</h1>
+
+    <%= yield %>
+  </div>
+</div>
+
+<%= javascript_include_tag "application" %>
+</body>
+</html>

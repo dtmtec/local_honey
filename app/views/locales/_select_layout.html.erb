@@ -6,13 +6,13 @@
 
   <ul class="dropdown-menu">
     <li title="<%= t('locales.portuguese') %>">
-      <%= link_to local_honey.locale_path('pt-BR') do %>
+      <%= link_to local_honey.send("#{options[:scope]}_locale_path", 'pt-BR') do %>
         <%= image_tag('local_honey/flag-pt-BR.png') %>
         <%= t('locales.portuguese') %>
       <% end %>
     </li>
     <li title="<%= t('locales.english') %>">
-      <%= link_to local_honey.locale_path('en') do %>
+      <%= link_to local_honey.send("#{options[:scope]}_locale_path", 'en') do %>
         <%= image_tag('local_honey/flag-en.png') %>
         <%= t('locales.english') %>
       <% end %>

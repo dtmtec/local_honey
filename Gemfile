@@ -13,5 +13,15 @@ gem "jquery-rails"
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
+gem "mongoid"
+
+gem "spork"
+gem "rspec-rails"
+gem "capybara"
+gem "selenium-webdriver"
+gem "database_cleaner"
+gem "factory_girl_rails"
+gem "simplecov", require: false
+
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
