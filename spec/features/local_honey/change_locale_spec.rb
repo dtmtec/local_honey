@@ -34,6 +34,12 @@ feature "Change locale" do
 
       current_path.should eq(example_private_route_path)
     end
+
+    it "redirects to root path when request it's comming from nowhere" do
+      visit local_honey.user_locale_path('en')
+
+      current_path.should eq root_path
+    end
   end
 
   context "for a public session" do

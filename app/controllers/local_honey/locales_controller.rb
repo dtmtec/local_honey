@@ -8,7 +8,7 @@ module LocalHoney
         session[:locale] = params[:locale]
       end
 
-      redirect_to request.referrer
+      redirect_to request.referrer || main_app.root_path
     end
 
     protected
